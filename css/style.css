@@ -161,7 +161,76 @@ ul .skills-bar {
   position: relative;
  
 }
-.skills-bar::before {
+
+.tab-contents ul li {
+
+  position: relative;
+}
+.tab-contents ul li::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 6px;
+  top: 100%;
+  background-color: var(--light-color);
+  border-radius: 10px;
+
+}
+.tab-contents ul li .p{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: var(--main-color);
+  left: 0;
+  border-radius: 10px;
+  height: 6px;
+  top: 100%;
+  transition: all 2s ease;
+}
+ .tab-contents ul li i{
+  color: var(--main-color);
+  font-size: 20px;
+  margin-bottom: 3px;
+ }
+
+.tab-contents ul li .p1.full-width{
+  width: 90%;
+}
+ .tab-contents ul li .p2.full-width{
+  width: 80%;
+}
+ .tab-contents ul li .p3.full-width{
+  width: 75%;
+}
+.tab-contents ul li .p4.full-width{
+  width: 90%;
+}
+ .tab-contents ul li .p5.full-width{
+  width: 60%;
+}
+.percent {
+  position: absolute;
+  left: 0%;
+  transform: translateX(-50%);
+}
+.percent1 {
+  left: 90%;
+}
+.percent2 {
+  left: 80%;
+}
+.percent3 {
+  left: 75%;
+}
+.percent4 {
+  left: 90%;
+}
+.percent5 {
+  left: 60%;
+}
+
+/* .skills-bar::before {
   position: absolute;
   content: "";
   left: 0;
@@ -181,11 +250,16 @@ ul .skills-bar {
   content: "";
   left: 0;
   bottom: -8px;
-  width: 90%;
+  width: 0%;
   height: 6px;
   background-color: var(--main-color);
   border-radius: 10px;
 }
+
+.skills-bar1::after{
+  width: 0;
+}
+
 .skills-bar2::after {
   width: 80%;
 }
@@ -216,7 +290,7 @@ ul .skills-bar {
 .skills-bar i {
   color: var(--main-color);
   font-size: 20px;
-}
+} */
 /* end about */
 /* START SERVICES */
 .services {
@@ -621,3 +695,19 @@ form textarea {
   }
 }
 
+.return-icon{
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+ 
+  font-size: 30px;
+  cursor: pointer;
+}
+.return-icon a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+.return-icon:hover{
+  color: var(--light-color);
+}
