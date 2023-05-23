@@ -17,7 +17,7 @@
 //     })
 // });
 var tabLinks = document.getElementsByClassName("tab-links");
-var tabContents = document.getElementsByClassName("tab-contents");
+var tabContents = document.getElementsByClassName("tab-content");
 function openTab(tabname) {
   for (tabLink of tabLinks) {
     tabLink.classList.remove("active-link");
